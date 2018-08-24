@@ -1,7 +1,8 @@
 import pandas as pd
 
 def extract_user_text_data(f):
-    df = pd.read_excel(f, sheet_name=0)
+    #df = pd.read_excel(f, sheet_name=0)
+    df = pd.read_table(f)
     df.columns = df.columns.str.strip()
     df['Disease'] = df['Disease'].str.strip().str.lower().values
     ## retrieve the first disease name
