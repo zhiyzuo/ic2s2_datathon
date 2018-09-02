@@ -47,3 +47,7 @@ dataset.dump
 politeness/
 uclassify_apis.csv
 *.csv
+*dump*
+*ldamodel*
+*.dta
+*.dict
